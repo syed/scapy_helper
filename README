@@ -1,0 +1,9 @@
+This utitlity lets you create a simple TCP stack using Scapy.
+It maintians the sequence,ack numbers and offers simple functions
+to send and recieve data
+
+`ScapyConnection` is the base class which can be inherited to provide
+custom functionality. 
+
+The function `process_packet` is called for every packet recieved for that 
+connection. This function should be overridden by the derived class.
